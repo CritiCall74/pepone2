@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page introuvable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /**
+font-family: cooper-black-std, serif;
+font-weight: 400;
+font-style: normal;
+**/
+
+/*
+font-family: 'Caveat Brush', cursive;
+font-family: "Poppins", sans-serif;
+*/
+
+@import "bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Poppins&display=swap");
+@font-face {
+  font-family: "Cooper Black";
+  src: url("/fonts/cooper-black.otf");
+}
+        * {
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        html {
+            color: #fff;
+            display: table;
+            font-family: "Poppins", sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+            background: url(../images/not-ready.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 5rem;
+            font-weight: 400;
+            font-family: "Cooper Black";
+            width: 100%;
+            margin: auto;
+        }
+        h1 span{
+            display: block;
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        p {
+            margin: 50px auto;
+            width: 100%;
+            font-size: 1.5rem;
+        }
+        .lost{
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #f8c95f;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+            body, p {
+                width: 95%;
+            }
+
+            h1 {
+                font-size: 1.5em;
+                margin: 0 0 0.3em;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Erreur 404... <span>Votre pizza n'est pas encore prête</span></h1>
+    <p>Nous vous invitons donc à cliquer sur ce <a href="../homepage.html" class="lost">lien</a> pour revenir à l'accueil.</p>
+</body>
+</html>

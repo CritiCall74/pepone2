@@ -1,0 +1,8 @@
+User-agent: *
+Disallow:/js
+Disallow:/fonts
+Allow: /
+Sitemap: https://www.laplagedaix.com/sitemap.xml
+Sitemap: http://www.laplagedaix.com/sitemap.xml
+ 
+
