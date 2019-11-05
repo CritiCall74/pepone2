@@ -9,7 +9,7 @@ if(isset($_POST['send'])){
 	$ok = true;
 	$message="Nom : $nom"."\r\n"."Mail : $mail"."\r\n"."Objet : $object"."\r\n"."Téléphone : $phone"."\r\n"."Message : $text";
 		if($ok) {
-            $destinataire = "donzelgargandtom@gmail.com";
+            $destinataire = "???????????????????";
             $headers = "From: $mail" . "\r\n".
             "Reply-To: $mail" . "\r\n" .
             'X-Mailer: PHP/' . phpversion(). "\r\n".
