@@ -24,7 +24,23 @@
     <meta property="og:description"
         content=" Page Facebook du Pizza Pepone, restaurant pizzeria à l'ambiance chaleureuse et conviviale dans Annecy et ses alentours">
 
-
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/2/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/2/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/2/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/2/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/2/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/2/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/2/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/2/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/2/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/2/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/2/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/2/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/2/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/2/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 
     <!-- Bootstrap CSS -->
@@ -34,8 +50,7 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
-        
-    <link href="css/styles.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet"
@@ -194,7 +209,7 @@
             légales</a>
     </div>
 
-    
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -294,32 +309,32 @@
         }
     </script>
 
-<script>
-    var mymap = L.map('mapid').setView([45.911779, 6.130674], 12);
-    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox.streets',
-        accessToken: 'pk.eyJ1IjoiY3JpdGljYWxsIiwiYSI6ImNrMmVpaDZrajA5Mm8zbXJhb3BzMGwyeTQifQ.QbTCdKqhLrZJTN4s7zXztw'
-    }).addTo(mymap);
-    var myIcon = L.icon({
-    iconUrl: 'images/marker.png',
-    iconSize: [17, 28],
-    iconAnchor: [10, 27],
-    popupAnchor: [-3, -76],
-    shadowUrl: 'images/shadow_marker.png',
-    shadowSize: [17, 28],
-    shadowAnchor: [2, 27]
-});
-    var marker = L.marker([45.911779, 6.130674],{icon: myIcon}).addTo(mymap);
-    var marker2 = L.marker([45.9139133, 6.0904318],{icon: myIcon}).addTo(mymap);
-    var marker3 = L.marker([45.90405, 6.1577314],{icon: myIcon}).addTo(mymap);
-    var marker4 = L.marker([45.9218475, 6.1432709],{icon: myIcon}).addTo(mymap);
-    var marker5 = L.marker([45.9209057,6.0869195],{icon: myIcon}).addTo(mymap);
-    var marker6 = L.marker([45.9614326,6.0378161],{icon: myIcon}).addTo(mymap);
+    <script>
+        var mymap = L.map('mapid').setView([45.911779, 6.130674], 12);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiY3JpdGljYWxsIiwiYSI6ImNrMmVpaDZrajA5Mm8zbXJhb3BzMGwyeTQifQ.QbTCdKqhLrZJTN4s7zXztw'
+        }).addTo(mymap);
+        var myIcon = L.icon({
+            iconUrl: 'images/marker.png',
+            iconSize: [17, 28],
+            iconAnchor: [10, 27],
+            popupAnchor: [-3, -76],
+            shadowUrl: 'images/shadow_marker.png',
+            shadowSize: [17, 28],
+            shadowAnchor: [2, 27]
+        });
+        var marker = L.marker([45.911779, 6.130674], { icon: myIcon }).addTo(mymap);
+        var marker2 = L.marker([45.9139133, 6.0904318], { icon: myIcon }).addTo(mymap);
+        var marker3 = L.marker([45.90405, 6.1577314], { icon: myIcon }).addTo(mymap);
+        var marker4 = L.marker([45.9218475, 6.1432709], { icon: myIcon }).addTo(mymap);
+        var marker5 = L.marker([45.9209057, 6.0869195], { icon: myIcon }).addTo(mymap);
+        var marker6 = L.marker([45.9614326, 6.0378161], { icon: myIcon }).addTo(mymap);
 
-</script>
-    
+    </script>
+
 
 </body>
 
