@@ -233,64 +233,7 @@
         });
     </script>
 
-    <script>
-
-        function selInit() {
-            var tabs = document.getElementById("tabs");
-            var litag = tabs.querySelector("li");   // first li
-            litag.style.background = "rgba(0, 0, 0, 0)";
-            litag.style.color = "#fff";
-        }
-
-        function selView(n, litag) {
-            var svgview = "none";
-            var codeview = "none";
-            var troll = "none";
-            var git = "none";
-
-            switch (n) {
-                case 1:
-                    svgview = "inline";
-                    break;
-                case 2:
-                    codeview = "inline";
-                    break;
-                case 3:
-                    troll = "inline";
-                    break;
-                case 4:
-                    git = "inline";
-                    break;
-                // add how many cases you need
-                default:
-                    alert("???");
-            }
-            document.getElementById("annecy").style.display = svgview;
-            document.getElementById("meythet").style.display = codeview;
-            document.getElementById("labalme").style.display = troll;
-            document.getElementById("tilleuls").style.display = git;
-
-            var tabs = document.getElementById("tabs");
-            var ca = Array.prototype.slice.call(tabs.querySelectorAll("li"));
-            ca.map(function (elem) {
-                elem.style.background = "rgba(0, 0, 0, 0)";
-                elem.style.color = "#808080";
-                // elem.style.paddingLeft = "0px";
-                // elem.style.borderBottom = "1px solid gray"
-            });
-            // litag.style.borderBottom = "1px solid white";
-            litag.style.background = "rgba(0, 0, 0, 0)";
-            litag.style.color = "#fff";
-            litag.after = ('<img src="images/triangle.png"')
-
-            // litag.style.paddingLeft = "20px";
-        }
-
-
-        // window.onload = function () {
-        //     selInit()
-        // }
-    </script>
+   
     <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
         window.onscroll = function () { scrollFunction() };
