@@ -1,7 +1,22 @@
+var env;
+if (typeof process === 'undefined') {
+  env = null;
+} else  {
+  env = process.env;
+}
+
 var newsletter = {
+  apiUrl: 'http://localhost:3000',
+
   init: function() {
     var newsletterRegisterButton = document.getElementById('newsletter-register');
     newsletterRegisterButton.addEventListener('click', newsletter.register);
+
+    if (env) {
+      if (env.API_URL) {
+        newsletter.apiUrl = env.API_URL;
+      }
+    }
   },
 
   register: function() {
@@ -11,7 +26,7 @@ var newsletter = {
       email
     };
 
-    var request = new Request('http://localhost:3000/register', {
+    var request = new Request(newsletter.apiUrl + '/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
